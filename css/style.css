@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to top, rgba(6, 5, 20, 0.6) 10%, transparent) fixed, url(/assets/backgrounds/background.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Header */
+.main-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(6, 5, 20, 0.8);
+    padding: 0.5rem 1rem;
+    z-index: 1;
+    border-bottom: 0.1875em solid #1c1c38;
+}
+
+.main-header>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: #9e9e9e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+}
+
+.main-header__brand img {
+    height: 200%;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: center;
+    width: calc(100% - 74px);
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #9e9e9e;
+    font-weight: bold;
+    padding: 0.2rem 0;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active{
+    color: #B0782B;
+    border-bottom: 0.125em solid #B0782B;
+    transition-duration: 0.15s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #9e9e9e;
+    float: right;
+    line-height: 0px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* Main */
+
+.section-content {
+    background: rgba(6, 5, 20, 0.95);
+    text-align: center;
+    padding: 2.5em;
+    margin: 5em;
+    display: inline-block;
+    width: calc(100% - 10em);
+    height: auto;
+    vertical-align: middle;
+    color: #9e9e9e;
+    border: 0.125em solid #1c1c38;
+    border-radius: 0.5em;
+}
+
+.section-map img {
+    height: 100%;
+    margin-bottom: 2%;
+    border-radius: 0.5em;
+    border: 2px solid #1c1c38;
+    box-shadow: #1c1c38 0px 0px 64px 2px;
+}
+
+
+.section-content h1 {
+    font-family: "Anton", sans-serif;
+    padding-bottom: 1%;
+    font-size: xx-large;
+    color: #B0782B;
+}
+
+.section-content h2 {
+    font-family: "Anton", sans-serif;
+    padding-bottom: 1%;
+    color: #B0782B;
+}
+
+.section-content h4 {
+    font-family: "Anton", sans-serif;
+    padding: 1%;
+    color: rgb(199, 15, 15);
+}
+
+.task__ingredients {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.task__ingredient {
+    margin: 1rem 0;
+}
+
+li b{
+    color: #B0782B;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 952px) {
+    body {
+        background: rgba(6, 5, 20, 0.85);
+    }
+
+    /* Header */
+
+    .main-header {
+        background-color: rgba(6, 5, 20, 1);
+        height: 80px;
+    }
+
+    .main-header__brand {
+        display: none;
+    }
+
+    .main-nav {
+        width: 100%;
+    }
+
+    .main-nav__item {
+        display: block;
+        margin: 0;
+    }
+
+    .section-content {
+        position: relative;
+        margin: 2em;
+        width: calc(100% - 4em);
+        height: auto;
+        top: 80px;
+    }
+
+    .section-map img {
+        height: 120px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(6, 5, 20, 0.95);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav a:hover,
+    a.active {
+        background: none;
+        color: #1c1c38;
+
+    }
+
+    #check:checked~ul {
+        left: 0;
+
+    }
+}
