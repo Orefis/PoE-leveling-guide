@@ -70,7 +70,7 @@ body {
 }
 
 .main-nav__item a:hover,
-.main-nav__item a:active{
+.main-nav__item a:active {
     color: #B0782B;
     border-bottom: 0.125em solid #B0782B;
     transition-duration: 0.15s;
@@ -145,7 +145,7 @@ body {
     margin: 1rem 0;
 }
 
-li b{
+li b {
     color: #B0782B;
 }
 
@@ -223,3 +223,30 @@ li b{
 
     }
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #060514;
+}
+
+td {
+    border-bottom: 1px solid #f9f9f9;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #1c1c38;
+}
+
+.table-header {
+    text-align: center;
+    background-color: rgba(6, 5, 20, 0.8);
+    color: white;
+    padding: 10px;
+  }
